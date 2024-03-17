@@ -3,3 +3,4 @@ db.sqlite3
 littlemon/__pycache__
 reservation/__pycache__
 restaurant/__pycache__
+restaurant/migrations/__pycache__
