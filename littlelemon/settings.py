@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     "restaurant",
     "rest_framework",
     "rest_framework.authtoken",
+    "djoser",
 
     "django.contrib.admin",
     "django.contrib.auth",
@@ -125,8 +126,8 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 REST_FRAMEWORK = {
    'DEFAULT_AUTHENTICATION_CLASSES': (
        'rest_framework.authentication.TokenAuthentication',
-   ),
-   'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAdminUser'
+       'rest_framework.authentication.SessionAuthentication',
    ),
 }
+
+DJOSER={"USER_ID_FIELD":"username"}
